@@ -1,0 +1,9 @@
+<?include_once("config.inc.php");?>
+<?
+$urlKey="search_results";
+$CHECK_CATPAGE=GetIDFromUrlKey($urlKey);
+$custompage="results.php";
+?>
+<?include_once("inc/topmenu.inc.php");?>
+<?include_once("header.php");?>
+<?include_once("footer.inc.php");?>

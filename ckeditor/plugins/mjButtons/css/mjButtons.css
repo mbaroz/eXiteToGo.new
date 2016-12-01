@@ -1,0 +1,39 @@
+/*
+	Plugin	: MJ Buttons
+	Author	: Michael Janea (michaeljanea.byethost7.com)
+	Version	: 1.0
+*/
+
+#mjButtonsFieldset, #mjButtonsFieldset legend {text-align:center !important; border:1px solid #aeb3b9; -webkit-border-radius:5px; border-radius:5px;}
+#mjButtonsFieldset legend {padding:.3em .5em; text-align:left;}
+#mjButtonsFieldset .block {max-width:85%; margin:auto; text-align:center;}
+
+.mj-button {outline:none; padding:6px 9px; margin:2px; cursor:pointer; font-family:Arial, Helvetica, sans-serif; -webkit-border-radius:3px; border-radius:3px; -webkit-box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 1px rgba(0, 0, 0, 0.15); box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 1px rgba(0, 0, 0, 0.15); background-color:#e0e0e0; color:#666; text-shadow:none; border:1px solid #ababab;}
+.mj-button.gradient {background-image:-webkit-linear-gradient(#e8e5e5,#e0e0e0); background-image:linear-gradient(#e8e5e5,#e0e0e0);}
+
+.mj-button.small {padding:3px 6px;}
+.mj-button.large {padding:10px 21px;}
+.mj-button.block {display:block; width:100%;}
+.mj-button.small.rounded {padding-left:15px; padding-right:15px;}
+.mj-button.rounded {-webkit-border-radius:50px; border-radius:50px; padding-left:20px; padding-right:20px;}
+.mj-button.large.rounded {padding-left:25px; padding-right:25px;}
+
+.mj-button.black, .mj-button.blue, .mj-button.green, .mj-button.orange, .mj-button.pink, .mj-button.red, .mj-button.yellow {text-shadow:1px 1px 1px rgba(0, 0, 0, 0.4);}
+.mj-button.yellow {text-shadow:1px 1px 1px rgba(255, 255, 255, 0.8);}
+.mj-button.black {background:#434343; color:#fff;	border:1px solid #4c4c4c;}
+.mj-button.black.gradient {background-image:-webkit-linear-gradient(#5d5d5d,#434343); background-image: linear-gradient(#5d5d5d,#434343);}
+.mj-button.blue {background-color:#377ad1; color:#fff; border:1px solid #4181af;}
+.mj-button.blue.gradient {background-image:-webkit-linear-gradient(#56aae8,#377ad1); background-image:linear-gradient(#56aae8,#377ad1);}
+.mj-button.green {background-color:#63a730; color:#fff; border:1px solid #62a62f;}
+.mj-button.green.gradient {background-image:-webkit-linear-gradient(#7ebe4c,#63a730); background-image:linear-gradient(#7ebe4c,#63a730);}
+.mj-button.orange {background-color:#f48323; color:#fff; border:1px solid #e6791c;}
+.mj-button.orange.gradient {background-image:-webkit-linear-gradient(#f4af26,#f48323); background-image:linear-gradient(#f4af26,#f48323);}
+.mj-button.pink {background-color:#ed56b5; color:#fff; border:1px solid #cc3795;}
+.mj-button.pink.gradient {background-image:-webkit-linear-gradient(#f87acb,#ed56b5); background-image:linear-gradient(#f87acb,#ed56b5);}
+.mj-button.red {background-color:#d54746; color:#fff; border:1px solid #d1371b;}
+.mj-button.red.gradient {background-image:-webkit-linear-gradient(#f7664b,#d54746); background-image:linear-gradient(#f7664b,#d54746);}
+.mj-button.yellow {background-color:#ead711; color:#666; border:1px solid #ddc700;}
+.mj-button.yellow.gradient {background-image:-webkit-linear-gradient(#faeb4a,#ead711); background-image:linear-gradient(#faeb4a,#ead711);}
+
+.mj-button:active, .mj-button.active {-webkit-box-shadow:inset 0 0 6px rgba(0, 0, 0, 0.2); box-shadow:inset 0 0 6px rgba(0, 0, 0, 0.2)}
+.mj-button:disabled {background:#e0e0e0 !important; color:#aaa; cursor:auto; text-shadow:none; border:1px solid #a0a0a0; -webkit-box-shadow:none !important; box-shadow:none !important;}

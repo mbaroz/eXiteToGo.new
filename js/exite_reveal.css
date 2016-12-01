@@ -1,0 +1,30 @@
+.exiteRevealWrapper{transition:all 0.3s;width:100%;position:fixed;top:0;height:100%;z-index:802;background:rgba(0,0,0,0.6);display:none;}
+.exiteReveal {
+width:570px;
+min-width:200px;
+min-height:100px;
+-webkit-box-shadow:0px 0px 20px #111111;
+box-shadow:0px 0px 40px #111111;
+direction:rtl;
+text-align:center;
+margin:10% auto;
+background-color:white;
+box-sizing:border-box;
+padding:10px;
+display:none;
+}
+.exiteReveal .closeIcon {
+transform:rotate(45deg);
+position:absolute;
+margin:-77px -57px;
+color:white;
+font-size:5rem;
+cursor:pointer;
+font-family:-webkit-pictograph;
+}
+@media screen and (max-width: 680px) {
+.exiteReveal {width:80% !important;}
+  .exiteReveal img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+CKEDITOR.plugins.setLang('mjTab', 'el', {
+    title 			: 'τίτλος',
+	content 		: 'περιεχόμενο',
+	htmlIsAllowed	: 'HTML δεν επιτρέπεται',
+	addNewItem		: 'Προσθήκη νέου στοιχείου',
+	minimum			: 'Plugin πρέπει να περιέχει τουλάχιστον 1 τεμάχιο',
+	link			: 'σύνδεσμος',
+	style			: 'στυλ',
+	type			: 'τύπος',
+	size			: 'μέγεθος',
+	blockLevel		: 'Block Επίπεδο',
+	active			: 'ενεργός',
+	enabled			: 'Ενεργοποιήθηκε',
+	text			: 'κείμενο',
+	preview			: 'Προεπισκόπηση',
+	optional		: 'προαιρετικός',
+	badge			: 'σήμα',
+	caption			: 'λεζάντα',
+	image			: 'Εικόνα',
+	delete			: 'Είστε σίγουροι ότι θέλετε να διαγράψετε αυτό το στοιχείο;'
+});

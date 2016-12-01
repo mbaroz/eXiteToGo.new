@@ -1,0 +1,148 @@
+/*
+Copyright (c) 2003-2013, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.html or http://ckeditor.com/license
+*/
+@font-face {
+	font-family: 'almoni-dl-aaa-300';
+	src: url('/css/webfonts/almoni-dl-aaa-300.eot');
+	src: url('/css/webfonts/almoni-dl-aaa-300.eot?#iefix') format('embedded-opentype'),
+	url('/css/webfonts/almoni-dl-aaa-300.woff') format('woff'),
+        url('/css/webfonts/almoni-dl-aaa-300.ttf') format('truetype'),
+        url('/css/webfonts/almoni-dl-aaa-300.svg#almoni-dl-aaa-300') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'almoni-dl-aaa-400';
+	src: url('/css/webfonts/almoni-dl-aaa-400.eot');
+	src: url('/css/webfonts/almoni-dl-aaa-400.eot?#iefix') format('embedded-opentype'),
+	url('/css/webfonts/almoni-dl-aaa-400.woff') format('woff'),
+        url('/css/webfonts/almoni-dl-aaa-400.ttf') format('truetype'),
+        url('/css/webfonts/almoni-dl-aaa-400.svg#almoni-dl-aaa-400') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'almoni-dl-aaa-700';
+	src: url('/css/webfonts/almoni-dl-aaa-700.eot');
+	src: url('/css/webfonts/almoni-dl-aaa-700.eot?#iefix') format('embedded-opentype'),
+	url('/css/webfonts/almoni-dl-aaa-700.woff') format('woff'),
+        url('/css/webfonts/almoni-dl-aaa-700.ttf') format('truetype'),
+        url('/css/webfonts/almoni-dl-aaa-700.svg#almoni-dl-aaa-700') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'almoni-dl-aaa-900';
+	src: url('/css/webfonts/almoni-dl-aaa-900.eot');
+	src: url('/css/webfonts/almoni-dl-aaa-900.eot?#iefix') format('embedded-opentype'),
+	url('/css/webfonts/almoni-dl-aaa-900.woff') format('woff'),
+        url('/css/webfonts/almoni-dl-aaa-900.ttf') format('truetype'),
+        url('/css/webfonts/almoni-dl-aaa-900.svg#almoni-dl-aaa-900') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+body
+{
+	/* Font */
+	font-family: sans-serif, Arial, Verdana, almoni-dl-aaa-300,almoni-dl-aaa-400,almoni-dl-aaa-700,"Trebuchet MS";
+	font-size: 12px;
+
+	/* Text color */
+	color: #333;
+
+	/* Remove the background color to make it transparent */
+	background-color: #fff;
+
+	margin: 7px;
+}
+
+.cke_editable
+{
+	font-size: 13px;
+	line-height: 1.6em;
+}
+
+blockquote
+{
+	font-style: italic;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	padding: 2px 0;
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 0;
+}
+
+.cke_contents_ltr blockquote
+{
+	padding-left: 20px;
+	padding-right: 8px;
+	border-left-width: 5px;
+}
+
+.cke_contents_rtl blockquote
+{
+	padding-left: 8px;
+	padding-right: 20px;
+	border-right-width: 5px;
+}
+
+a
+{
+	color: #0782C1;
+}
+
+ol,ul,dl
+{
+	/* IE7: reset rtl list margin. (#7334) */
+	*margin-right: 0px;
+	/* preserved spaces for list items with text direction other than the list. (#6249,#8049)*/
+	padding: 0 40px;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	font-weight: normal;
+	line-height: 1.2em;
+}
+
+hr
+{
+	border: 0px;
+	border-top: 1px solid #ccc;
+}
+
+img.right {
+    border: 1px solid #ccc;
+    float: right;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+img.left {
+    border: 1px solid #ccc;
+    float: left;
+    margin-right: 15px;
+    padding: 5px;
+}
+
+img:hover {
+	opacity: .9;
+	filter: alpha(opacity = 90);
+}
+
+pre
+{
+	white-space: pre-wrap; /* CSS 2.1 */
+	word-wrap: break-word; /* IE7 */
+}
+.hidemobile { border: 1px dotted blue; position: relative; }
+.mobileonly { border: 1px dotted green; position: relative; }
+
+.hidemobile:hover { background-color: #99CCFF; }
+.mobileonly:hover { background-color: #E2FDE6; }
+
+.hidemobile:hover:before, .mobileonly:hover:before { position: absolute; top: -3px; left: -50px; color: black; height: 16px; font-size: 10px; padding: 2px; z-index: 10; }
+
+.hidemobile:hover:before { content:"Hide on mobile"; border: 1px solid blue; background-color: #3399FF; }
+.mobileonly:hover:before { content:"Mobile only"; border: 1px solid green; background-color: #84F695; }

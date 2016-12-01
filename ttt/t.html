@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>this is a test</title>
+	<script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+	<script type="text/javascript" src="w.js"></script>
+	<style type="text/css">
+	body {font-size: 18px;}
+	.widgetWrapper {
+		position:absolute;
+		width:0px;height: 0px;
+		background-color: transparent;
+		display: none;
+		transition:all 0.45s;
+
+	}
+	.widgetWrapper > div.ic {
+		width:0px;height: 0px;
+		background-color: #efefef;
+		border:2px solid #333;
+		border-radius: 40px;
+		margin:10px auto;
+		cursor: pointer;
+		display: block;
+		transition:all 0.45s;
+		
+	}
+	.widgetWrapper.show > div.ic {
+		width: 40px;height: 40px;
+		transition:all 0.45s;
+		transition-delay:1s;
+	}
+	.widgetWrapper.show {display: block;width:100px;height:200px;};
+	.widgetWrapper.show div.ic:hover {
+		background-color: #fff;
+		border-color:#111;
+	}
+	
+	
+	</style>
+</head>
+<body>
+	<header>
+		<h2>Welcome to this page</h2>
+	</header>
+	<section>
+	<p>
+		hello there this is a palce for a paragraph hello second is a palce for a paragraph<br>
+		hello there this is a palce for a paragraph hello second is a palce for a paragraph<br>
+	</p>
+	<p>
+		hello second is a palce for a paragraph hello second is a palce for a paragraph <br>hello second is a palce for a paragraphhello second is a palce for a paragraph<br>hello second is a palce for a paragraphhello second is a palce for a paragraph
+	</p>
+	<p>
+		hello second is a palce for a paragraph hello second is a palce for a paragraph <br>hello second is a palce for a paragraphhello second is a palce for a paragraph<br>hello second is a palce for a paragraphhello second is a palce for a paragraph
+	</p>
+	</section>
+</body>
+</html>

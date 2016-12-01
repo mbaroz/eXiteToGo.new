@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title>Test</title>
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/jquery-migrate-1.2.1.min.js"></script>
+		
+</head>
+<style type="text/css">
+.devices {
+	width:428px;
+	height:260px;
+	overflow: hidden;
+}
+.devices .mac {
+	width: 100%;
+	height: 100%;
+	background-image: url('/images/macbook.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.devices .mac .iphone {
+	background-image: url('/images/iphone_only.png');
+	width:150px;
+	height:238px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position:relative;
+	bottom:-38px
+
+}
+.devices .mac .gallery {
+	position: absolute;
+	width:324px;
+	height:211px;
+	background-color: #ddd;
+	top:37px;
+	left:60px;
+	overflow: hidden;
+}
+.devices .mac .iphone .gallery {
+	width:133px;
+	height:194px;
+	background-color: #ddd;
+	left:8px;
+	top:30px;
+}
+</style>
+<body>
+	<div class="devices">
+		<div class="mac">
+			<div class="gallery">
+				<iframe allowtransparency="true" border="0" class="embed_effect_gallery_70" frameborder="0" height="211" id="iframe_gallery" scrolling="no" src="http://www.exite.co.il/iframe_effectGallery.php?gID=70&amp;noborder=1&amp;nobg=1&amp;noarrows=1" width="350"></iframe>
+			</div>
+			<div class="iphone">
+				<div class="gallery">
+					<iframe allowtransparency="true" border="0" class="embed_effect_gallery_69" frameborder="0" height="240" id="iframe_gallery" scrolling="no" src="http://www.exite.co.il/iframe_effectGallery.php?gID=69&amp;noborder=1&amp;nobg=1&amp;noarrows=1" width="134"></iframe>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+</body>
+</html>

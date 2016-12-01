@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title></title>
+    <script src="http://www.mevashlim.co.il/js/jquery-1.9.1.min.js"></script>
+	<script src="http://www.mevashlim.co.il/js/jquery-migrate-1.2.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/exite_reveal.css">
+    <script language="javascript"  type="text/javascript" src="js/exite_reveal.js"></script>
+    <script language="javascript"  type="text/javascript" src="//cdn.exiteme.com/js/dropzone.js"></script>
+    <link href="//cdn.exiteme.com/css/animate.css" rel="stylesheet">
+    <link href="//cdn.exiteme.com/css/dropzone.css?v=14695364555" rel="stylesheet">
+    <style>
+    body {font-size: 14px;font-family: arial;margin:0;}
+    .exite_dropzone_file {border:1px dotted silver;padding:10px;width:50%;margin:0 auto;height: 70%}
+	.exite_dropzone_file .button {padding:10px;border:2px solid black;font-size: 15px}
+	.contact_button{position:relative;box-sizing:border-box;padding:20px;margin:20px auto;width: 300px;height: 40px;transition:all 0.3s;background:#efefef;color:#333;border:2px solid red;}
+	.contact_button:hover .contact_inner {top:40vh;width:4em;visibility: visible;transform:translateX(0px) scale(20);}
+	.contact_button .contact_inner{margin:0 auto;transform:translateX(-2em) scale(0);width:2em;height: 4em;background-color:#eee;box-sizing:border-box;text-align: center;visibility:hidden ;position: absolute;transition:all 0.5s;left:50%;}
+    </style>
+</head>
+<body>
+<div class="myDiv">sfdfd</div>
+<div class="modal_on">Hellow</div>
+<div class="exite_dropzone_file">
+	Drop Files here
+	<div class="button" onclick="myDropzone.processQueue();myDropzone.options.autoProcessQueue=true;">Start Upload</div>
+</div>
+<script>
+$(document).ready(function(){$(".myDiv").exiteReveal({effectIn:'fadeInUp',effectOut:'fadeOutUp',delay:2000})});
+var myDropzone = new Dropzone("div.exite_dropzone_file",{ url: "/Admin/uploads/"});
+myDropzone.options.autoProcessQueue=false;
+
+</script>
+
+
+</body>
+</html>

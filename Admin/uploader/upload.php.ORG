@@ -1,0 +1,18 @@
+<?php
+	if (isset($_POST["PHPSESSID"])) {
+		session_id($_POST["PHPSESSID"]);
+	}
+	session_start();
+	// Work-around for setting up a session because Flash Player doesn't send the cookies
+	if (!empty($_FILES)) {
+		$tempFile = $_FILES['Filedata']['tmp_name'];
+		print $tempFile;
+		$targetPath = '/shellcase/Admin/uploader_new/uploads/';
+		$targetFile =  str_replace('//','/',$targetPath) . $_FILES['Filedata']['name'];
+		
+		
+			move_uploaded_file($tempFile,$targetFile);
+			
+	}
+	exit(0);
+?>
